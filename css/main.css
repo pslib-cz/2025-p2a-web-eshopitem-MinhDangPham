@@ -10,14 +10,14 @@ body {
 
 .karty {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 250px);
     gap: 1em;
 }
 
 .card__produkt {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr;
+    grid-template-rows: auto 1fr auto;
     color: var(--text-color);
 }
 
@@ -26,10 +26,14 @@ body {
 }
 
 .picture {
-    border-radius: 2em;
+    border-radius: 1.5em;
     overflow: hidden;
-    max-width: 100%;
-    height: 1em;
+    width: 250px;
+    height: 250px;
+}
+.img {
+    width: 250px;
+    height: 250px;
 }
 
 .cena__semibold {
