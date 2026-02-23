@@ -1,6 +1,7 @@
 
 :root {
     --text-color: white;
+    --favorite-color: rgb(47, 125, 59);
 }
 
 body {
@@ -30,18 +31,40 @@ body {
     overflow: hidden;
     width: 250px;
     height: 250px;
+    position: relative;
+}
+
+.picture::before {
+    content: "+";
+    font-size: 3em;
+    background-color: var(--favorite-color);
+    color: white;
+    aspect-ratio: 1/1;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0.4em;
+    text-align: center;
+    line-height: 1.05em;
 }
 .img {
     width: 250px;
     height: 250px;
 }
-
+.cena {
+    padding-bottom: 0.5em;
+}
+.cena__top {
+     padding-bottom: 0.5em;
+}
 .cena__semibold {
     font-weight: bolder;
     font-size: xx-large;
 }
 .cena__sup {
-    font-size: x-large;
+    font-size: large;
     font-weight: bolder;
 }
 .cca__semibold {
@@ -53,4 +76,9 @@ body {
 .cena__bottom {
     display: flex;
     justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
 }
