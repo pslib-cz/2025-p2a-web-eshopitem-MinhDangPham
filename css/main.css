@@ -1,4 +1,4 @@
-/* breakpoints: ~250px(3x1), ~532px(2x2), ~798px(1x3) */
+/* breakpoints: 250px(3x1), 532px(2x2), 798px(1x3) */
 :root {
     --text-color: white;
     --favorite-color: rgb(47, 125, 59);
@@ -80,7 +80,9 @@ a {
 }
 .img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 .cena {
     padding-bottom: 0.5em;
