@@ -9,10 +9,20 @@ body {
     background-color: black;
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 .karty {
     display: grid;
     grid-template-columns: repeat(3, 250px);
     gap: 1em;
+}
+
+.roundel {
+    height: 1em;
+    width: auto;
 }
 
 .card__produkt {
@@ -78,7 +88,3 @@ body {
     justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
-    color: var(--text-color);
-}
