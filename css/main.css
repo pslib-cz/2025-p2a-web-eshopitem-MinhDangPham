@@ -17,7 +17,7 @@ a {
 
 .karty {
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(auto-fit, 250px);
     gap: 1em;
 }
 
