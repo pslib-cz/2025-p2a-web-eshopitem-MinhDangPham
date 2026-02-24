@@ -2,6 +2,7 @@
 :root {
     --text-color: white;
     --favorite-color: rgb(47, 125, 59);
+    --red-tag: rgb(227, 121, 112);
 }
 
 body {
@@ -42,6 +43,25 @@ a {
     width: 250px;
     height: 250px;
     position: relative;
+}
+
+.picture__tag::after {
+    content: "Denní kontrola cen";
+    font-size: 0.9em;
+    background-color: var(--red-tag);
+    color: white;
+    height: 1em;
+    border-radius: 0.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    text-align: center;
+    line-height: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
 }
 
 .picture::before {
