@@ -37,10 +37,7 @@ a {
     color: var(--text-color);
 }
 
-.picture {
-    border-radius: 1.5em;
-    overflow: hidden;
-    aspect-ratio: 1/1;
+.picture { 
     position: relative;
 }
 
@@ -83,12 +80,16 @@ a {
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 1.5em;
+    aspect-ratio: 1/1;
+    overflow: hidden;
 }
 .cena {
     padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }
 .cena__top {
-     padding-bottom: 0.5em;
+    padding-bottom: 0.5em;
 }
 .cena__semibold {
     font-weight: bolder;
