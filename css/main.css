@@ -28,8 +28,14 @@ a {
 
 .card {
     display: grid;
+    /*
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    */
+    /**/
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+    /**/
     color: var(--text-color);
 }
 
@@ -59,7 +65,7 @@ a {
     padding-top: 0.2em;
 }
 
-.tagI {
+.plus {
     font-size: 3em;
     background-color: var(--add-color);
     color: white;
@@ -84,17 +90,21 @@ a {
     overflow: hidden;
 }
 .card__cena--div {
+    /**/
     padding-bottom: 0.5em;
+    /**/
     padding-top: 0.5em;
 }
+/**/
 .card__cena--top {
     padding-bottom: 0.5em;
 }
-.cena--semibold {
+/**/
+.card__cena--semibold {
     font-weight: bolder;
     font-size: xx-large;
 }
-.cena__sup {
+.card__cena--sup {
     font-size: large;
     font-weight: bolder;
 }
