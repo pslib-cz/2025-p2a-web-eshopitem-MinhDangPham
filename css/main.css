@@ -1,7 +1,7 @@
 /* breakpoints: 250px(3x1), 532px(2x2), 798px(1x3) */
 :root {
     --text-color: white;
-    --favorite-color: rgb(47, 125, 59);
+    --add-color: rgb(47, 125, 59);
     --red-tag: rgb(227, 121, 112);
 }
 
@@ -26,22 +26,24 @@ a {
     width: 0.8em;
 }
 
-.card__produkt {
+.card {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     color: var(--text-color);
 }
 
-.card__produkt--tag {
+.card--tag {
     color: var(--text-color);
 }
 
-.picture { 
+.card__picture {
     position: relative;
 }
 
-.picture__tag::after {
+
+/* Ne jako ::before. HTML! */
+.picture__tag::before {
     content: "Denní kontrola cen";
     font-size: 0.9em;
     background-color: var(--red-tag);
@@ -60,10 +62,10 @@ a {
     padding-top: 0.2em;
 }
 
-.picture::before {
+.picture::after {
     content: "+";
     font-size: 3em;
-    background-color: var(--favorite-color);
+    background-color: var(--add-color);
     color: white;
     aspect-ratio: 1/1;
     height: 1em;
@@ -88,10 +90,10 @@ a {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
-.cena__top {
+.card__cena--top {
     padding-bottom: 0.5em;
 }
-.cena__semibold {
+.cena--semibold {
     font-weight: bolder;
     font-size: xx-large;
 }
@@ -99,13 +101,13 @@ a {
     font-size: large;
     font-weight: bolder;
 }
-.cca__semibold {
+.cena__cca--semibold {
     font-weight: bolder;
 }
 .info {
     font-size: larger;
 }
-.cena__bottom {
+.card__cena--bottom {
     display: flex;
     justify-content: space-between;
 }
