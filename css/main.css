@@ -15,7 +15,7 @@ a {
     color: var(--text-color);
 }
 
-.karty {
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1em;
@@ -41,11 +41,8 @@ a {
     position: relative;
 }
 
-
-/* Ne jako ::before. HTML! */
-.picture__tag::before {
-    content: "Denní kontrola cen";
-    font-size: 0.9em;
+.tag {
+    font-size: 1em;
     background-color: var(--red-tag);
     color: white;
     height: 1em;
@@ -62,7 +59,7 @@ a {
     padding-top: 0.2em;
 }
 
-.picture::after {
+.card__picture::after {
     content: "+";
     font-size: 3em;
     background-color: var(--add-color);
@@ -86,7 +83,7 @@ a {
     aspect-ratio: 1/1;
     overflow: hidden;
 }
-.cena {
+.card__cena--div {
     padding-bottom: 0.5em;
     padding-top: 0.5em;
 }
