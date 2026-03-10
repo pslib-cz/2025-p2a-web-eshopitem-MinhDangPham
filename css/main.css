@@ -1,0 +1,121 @@
+/* breakpoints: ~250px(3x1), ~532px(2x2), ~798px(1x3) */
+:root {
+    --text-color: white;
+    --add-color: rgb(47, 125, 59);
+    --red-tag: rgb(227, 121, 112);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+}
+
+.roundel {
+    height: 0.8em;
+    width: 0.8em;
+}
+
+.card {
+    display: grid;
+    /*
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    */
+    /**/
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    /**/
+    color: var(--text-color);
+}
+
+.card--tag {
+    color: var(--text-color);
+}
+
+.card__picture {
+    position: relative;
+}
+
+.tag {
+    font-size: 1em;
+    background-color: var(--red-tag);
+    color: white;
+    height: 1em;
+    border-radius: 0.3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1em;
+    text-align: center;
+    line-height: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+}
+
+.plus {
+    font-size: 3em;
+    background-color: var(--add-color);
+    color: white;
+    aspect-ratio: 1/1;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0.4em;
+    text-align: center;
+    line-height: 1.05em;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.5em;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.card__cena--div {
+    /**/
+    padding-bottom: 0.5em;
+    /**/
+    padding-top: 0.5em;
+}
+/**/
+.card__cena--top {
+    padding-bottom: 0.5em;
+}
+/**/
+.card__cena--semibold {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.card__cena--sup {
+    font-size: large;
+    font-weight: bolder;
+}
+.cena__cca--semibold {
+    font-weight: bolder;
+}
+.info {
+    font-size: larger;
+}
+.card__cena--bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
